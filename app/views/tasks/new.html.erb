@@ -1,0 +1,13 @@
+<h2>Create a new task!</h2>
+<%= simple_form_for(@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.label :completed %>
+  <%= f.text_field :completed %>
+  <%= f.submit %>
+<% end %>
+<br>
+
+<%= link_to "Go to index page", tasks_path, class: 'btn btn-info' %>
